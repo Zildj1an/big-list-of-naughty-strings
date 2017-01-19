@@ -610,6 +610,7 @@ $ENV{'HOME'}
 %s
 {0}
 %*.*s
+File:///
 
 #	File Inclusion
 #

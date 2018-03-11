@@ -446,10 +446,12 @@
   "$HOME", 
   "$ENV{'HOME'}", 
   "%d", 
-  "%s", 
+  "%s%s%s%s%s", 
   "{0}", 
   "%*.*s", 
-  "File:///",
+  "%@", 
+  "%n", 
+  "File:///", 
   "../../../../../../../../../../../etc/passwd%00", 
   "../../../../../../../../../../../etc/hosts", 
   "() { 0; }; touch /tmp/blns.shellshock1.fail;", 
@@ -497,5 +499,7 @@
   "Roses are \u001b[0;31mred\u001b[0m, violets are \u001b[0;34mblue. Hope you enjoy terminal hue", 
   "But now...\u001b[20Cfor my greatest trick...\u001b[8m", 
   "The quic\b\b\b\b\b\bk brown fo\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007\u0007x... [Beeeep]", 
-  "Powerلُلُصّبُلُلصّبُررً ॣ ॣh ॣ ॣ冗"
+  "Powerلُلُصّبُلُلصّبُررً ॣ ॣh ॣ ॣ冗", 
+  "🏳0🌈️", 
+  "జ్ఞ‌ా"
 ]

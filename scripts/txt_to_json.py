@@ -6,7 +6,7 @@ import json
 
 with open('../blns.txt', 'r') as f:
 
-	# put all lines in the file into a Python list
+    # put all lines in the file into a Python list
     content = f.readlines()
     
     # above line leaves trailing newline characters; strip them out
@@ -14,6 +14,12 @@ with open('../blns.txt', 'r') as f:
     
     # remove empty-lines and comments
     content = [x for x in content if x and not x.startswith('#')]
+    
+    # insert empty string since all are being removed
+    content.insert(0, "")
+    
+    # special case: convert "\" to "\\" for valid JSON
+    #content = map(lambda x: x.replace('\','\\'), content)
     
 with open('../blns.json', 'wb') as f:
 
